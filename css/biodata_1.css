@@ -1,0 +1,171 @@
+    /* biodata.css */
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+#conta
+{
+    background-image: radial-gradient(pink 20%,rgb(211, 9, 211));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+#circle
+{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(136, 111, 160);
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: 1s;
+    z-index: 10;
+    overflow: hidden;
+    
+}
+.details
+{
+   position :absolute;
+    /* color: white;     */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translate(50px ,50px);
+}
+#details1
+{
+    position:relative;
+    left: 500px;
+    top: 240px;
+}
+#details2
+{
+    align-items: center;
+    position: relative;
+    left: 370px;
+    top: 110px;
+    transform: rotate(-45deg);
+}
+#details3
+{
+    position: relative;
+    left:150px;
+    top: 50px;
+    
+    transform: rotate(-90deg);
+}   
+#details4
+{   
+    
+    position: relative;
+    left:200px;
+    top:100px;
+    /* right: -7em; */
+    transform: rotate(-135deg);
+}
+#details5
+{
+ 
+    left: 120px;
+    /* right: -4em; */
+    top: 210px;
+    position: relative;
+    align-items: center;
+    transform: rotate(-180deg);
+}
+#details6
+{
+        left: 30px;
+        /* right:-7em; */
+        top:350px ;
+        position: relative;
+        align-items: center;
+        transform: rotate(-225deg);
+}
+#details7
+{
+        right: 237px;
+    top: 418px;
+     position:relative;
+     align-items: center;
+     transform: rotate(-270deg);
+}
+#details8
+{
+    align-items: center;
+    position: relative;
+       right: 550px;
+    top: 200px;
+    /* right: ; */
+    transform: rotate(-315deg);
+}
+
+
+.text
+{
+    margin: 1%;
+}
+#control
+{
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0em;
+    /* position: absolute; */
+    margin-top: 8em;
+    margin-left: -13em;
+
+}
+
+#up img
+{
+    height: 1em;
+    width:  1em;
+    transform: rotate(-90deg);
+}
+#down img
+{
+    height:1em;
+    width: 1em ;
+    transform: rotate(90deg);
+
+}
+#overlay
+{
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    border-top:284px solid white;
+    border-bottom: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 483px solid white;
+    position: absolute;
+    z-index: 2;
+}
+#myimg img
+{
+    /* z-index: 1; */
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    position: absolute;
+    top: -159px;
+    left: -274px;
+}
+/* h4
+{
+    margin: 0;
+} */
+#myfullbio
+{
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+    z-index: 3;
+    /* margin-left: 4em; */
+}

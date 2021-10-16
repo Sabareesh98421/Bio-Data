@@ -1,0 +1,120 @@
+<!-- BIODATA.html -->
+<html lang="en">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/biodata.css">
+    
+    <title>Biodata</title>
+</head>
+<body>
+        <div id="conta">
+                <div id="overlay">
+
+                    <div id="myimg">
+                        <img src="pmgS1.png">
+                    </div>
+                    
+                    <div id="control">
+                        <div id="up">
+                            <img src="fast-forward.png" id="upbtn"  onclick="anticlock()" alt="up" >
+                        </div>
+                            <div  id="ri8txt"><h5>click Arrows</h5></div>
+                        <div id="down">
+                            <img src="fast-forward.png" id="downbtn" onclick="clock()"  alt="down">
+                            </div>
+                        </div>
+               </div>    
+                    <div id="circle">  
+                            <div class="details">
+                                <div id ="details1">
+                                    
+                                        <h4> Name:-</h4>
+                                        <p class="text">Padmanabhan.S</p>
+                                        
+                               
+                                </div>
+                                <div id="details2">
+                                    <p>
+                                        <h4> Father's Name:-</h4>
+                                        <p class="text">Subramanian.P</p>
+                                    </p>
+                                </div>
+
+                                <div id="details3">
+                                    <p>
+                                        <h4> Qualification:-</h4>
+                                        <p class="text">B.C.A</p>
+                                        
+                                    </p>
+                                </div>
+                                <div id="details4">
+                                    <p>
+                                        <h4> Hobbyes:-</h4>
+                                        <p class="text">VideoEditing & photoediting</p>
+                                    </p>
+                                </div>
+                                <div id="details5">
+                                    <p>
+                                        <h4> Sports:-</h4>
+                                        <p class="text">Batmiton<br>chess</p>
+                                    </p>
+                                </div>
+                                <div id="details6">
+                                    <p>
+                                        <h4> Skills:-</h4>
+                                        <p class="text"> C,C++ ,HTML , CSS ,java, JavaScript</p>
+                                    </p>
+                                </div>
+                                <div id="details7">
+                                    <p>
+                                        <h4> Address:-</h4>
+                                        <p class="text">28,Sannathi Street,<br>Courtallam-627802.</p>
+                                    </p>
+                                </div>
+                                <div id="details8">
+                                    <p>
+                                        <h4> Contact:-</h4>
+                                        <p class="text">9245677706</p>
+                                    </p>
+                                </div>
+                            </div>
+
+                </div>
+
+
+                <div id="myfullbio">
+                
+                </div>  
+                
+        </div>
+         
+        <script>
+            var c =document.getElementById("circle");
+                    var upbutton=document.getElementById("upbtn");
+                    var downbutton=document.getElementById("downbtn");
+                    
+                    //var rotate_value=circle.style.transform;
+                    var rotate_value=c.style.transform;
+                    var rotate_sum;
+
+                    // alert(rotate_value);
+                
+                    function clock()
+                    {
+                        rotate_sum=rotate_value+"rotate(45deg)";
+                        c.style.transform=rotate_sum;
+                        rotate_value=rotate_sum;
+
+                    }
+                    function anticlock()
+                    {
+                        rotate_sum=rotate_value+"rotate(-45deg)";
+                        c.style.transform=rotate_sum;
+                        rotate_value=rotate_sum;
+                    }
+
+        </script>
+    </body>
+</html>
